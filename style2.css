@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+}
+.fettle {
+  display: flex;
+  flex-direction: column;
+}
