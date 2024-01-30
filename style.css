@@ -1,104 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto+Mono:wght@500&display=swap");
-
-body {
-  height: 100%;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-b {
-  user-select: none;
-  color: #ddd;
+body {
+  background-color: #eff8f6;
 }
 
-.form-login {
-  min-height: 657px;
-}
-
-label {
-  margin-left: 10px;
-  margin-bottom: 0px;
-}
-
-.container {
-  max-width: 380px;
-  min-height: 60%;
-  padding: 15px;
-  background: radial-gradient(circle at center, #ff8782, #ff6561);
-  opacity: 0.8;
-  border-radius: 35px;
-  position: relative;
-  top: 50%;
-  left: 37%;
-  margin-top: 50px;
-}
-
-.container h1 {
-  text-align: center;
-  color: #eee;
-  user-select: none;
-  font-family: "Kanit", sans-serif;
-  margin: 10px 0 10px 0;
-}
-
-input[type="email"],
-input[type="password"] {
+header {
+  background-color: #f9f7e8;
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 20px 0;
-  border: none;
-  background-color: #f1f1f1;
-  border-radius: 6px;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus {
-  background-color: #ddd;
-  outline: none;
+header .header nav p {
+  padding-left: 24px;
+}
+.header {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
-.btn,
-.search {
-  left: 12px;
-  color: black;
-  font-weight: 900;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 47%;
-  margin: 0 5px;
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: white;
-  left: 24%;
+.wisdom-text {
+  font-family: "Courgette-Regular";
+  font-weight: 400;
+  font-size: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.wisdom-green {
+  color: #62bfad;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-family: "Lato-Regular";
+  padding-top: 35px;
+  padding-left: 80px;
+  font-weight: 400;
+}
+
+.title-block {
+  padding: 198px;
+  text-transform: uppercase;
+  background-color: #d52047;
+  font-family: "Limelight-Regular";
+  color: #fff;
+  font-weight: 400px;
+  font-size: 48px;
   text-align: center;
-  text-decoration: none;
 }
 
-.btn:hover,
-.search:hover {
-  background-color: whitesmoke;
-  transition: 0.3s;
+.about-title {
+  font-size: 48px;
+  font-family: "Lato-Regular";
+  margin-top: 95px;
+  color: #d52047;
 }
 
-.text_under_button {
-  color: #ddd;
-  margin-top: 70px;
-  margin-bottom: 10px;
-  text-align: center;
-  user-select: none;
-  display: block;
+.about-container {
+  margin: 0 auto;
+  max-width: 1110px;
 }
 
-.login,
-.search {
+.about-block {
+  background-color: #e5e5e5;
+  margin-top: 40px;
+  border-radius: 8px;
   float: left;
+  display: flex;
+  margin-bottom: 80px;
 }
 
-.regist_link:focus {
-  color: rgb(14, 0, 120);
+.content-subtitle,
+.lorem {
+  padding: 24px;
+}
+
+.content-subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Lato-Regular";
+}
+
+.lorem {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Lato-Regular";
+  margin-top: 0px;
+}
+
+.about-image {
+  margin-top: 40px;
 }

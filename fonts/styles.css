@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Courgette-Regular";
+  src: url(./Courgette-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(./Lato-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Limelight-Regular";
+  src: url(./Limelight-Regular.woff2) format("woff2");
+}
