@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-body {
-  background-color: #eff8f6;
-}
-
 header {
   background-color: #f9f7e8;
   width: 100%;
@@ -56,23 +52,27 @@ nav {
   text-align: center;
 }
 
-.about-title {
+.main-about {
+  background-color: #eff8f6;
+}
+
+.title {
   font-size: 48px;
   font-family: "Lato-Regular";
-  margin-top: 95px;
   color: #d52047;
 }
 
 .about-container {
   margin: 0 auto;
   max-width: 1110px;
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 
 .about-block {
   background-color: #e5e5e5;
   margin-top: 40px;
   border-radius: 8px;
-  float: left;
   display: flex;
   margin-bottom: 80px;
 }
@@ -96,5 +96,90 @@ nav {
 }
 
 .about-image {
+  padding: 0;
+  padding-left: 17px;
+}
+
+.features {
+  background-color: #ffffff;
+}
+
+.features-block {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.features-title {
+  padding-top: 80px;
+}
+
+.cards-block {
+  display: flex;
   margin-top: 40px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-family: "Lato-Regular";
+  font-size: 32px;
+  padding-bottom: 24px;
+}
+
+.card {
+  border: 2px solid #e5e5e5;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.features-img {
+  padding-bottom: 24px;
+}
+
+.card-paragraph {
+  font-family: "Lato-Regular";
+  font-size: 16px;
+  padding-bottom: 24px;
+}
+
+.read-more-title {
+  font-size: 16px;
+  color: #d52047;
+  font-family: "Lato-Regular";
+  text-underline-offset: 3px;
+}
+
+footer {
+  background-color: #f9f7e8;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-paragraph {
+  font-size: 16px;
+  font-family: "Lato-Regular";
+  padding-top: 32px;
+  font-weight: 400;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.icons {
+  padding: 24px;
+  font-size: 24px;
+}
+
+.fa-brands {
+  padding-right: 16px;
+}
+
+.fa-brands:hover {
+  color: #d52047;
+  transition: 0.1s;
 }
