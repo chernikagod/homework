@@ -3,18 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Simple site</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="font/styles.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <p>git --version</p>
-    <p>git log</p>
-    <p>git status</p>
-    <p>git add .</p>
-    <p>git commit -m</p>
-    <p>git push origin</p>
-    <p>git checkout -b update-template</p>
-    <a href="gallery.html">Tap here</a>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <p class="nav-title homepage">Homepage</p>
+          <p class="nav-title about">About author</p>
+          <p class="nav-title works">Works</p>
+          <p class="nav-title process">Process</p>
+          <p class="nav-title contacts">Contacts</p>
+        </nav>
+        <div class="description">
+          <p class="big-title">Design and layout</p>
+          <p class="lorem">
+            Lorem Ipsum is fish text often used in print and web design. Lorem
+            Ipsum has been the standard "fish" for Latin texts since the early
+            16th century.
+          </p>
+          <a href="#" class="button"> write me</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about">
+        <p class="about-me-title">About me</p>
+        <p class="about-lorem">
+          About meLorem Ipsum is fish text often used in print and web design.
+          Lorem Ipsum has been the standard "fish" for Latin texts since the
+          early 16th century.
+        </p>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <div class="card">
+            <img src="img/project.png" alt="list" class="card-img" />
+            <div class="text-card">
+              <p class="card-title">40+</p>
+              <p class="card-projects">projects</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/project.png" alt="list" class="card-img" />
+            <div class="text-card">
+              <p class="card-title">40+</p>
+              <p class="card-projects">projects</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/project.png" alt="list" class="card-img" />
+            <div class="text-card">
+              <p class="card-title">40+</p>
+              <p class="card-projects">projects</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/project.png" alt="list" class="card-img" />
+            <div class="text-card">
+              <p class="card-title">40+</p>
+              <p class="card-projects">projects</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/project.png" alt="list" class="card-img" />
+            <div class="text-card">
+              <p class="card-title">40+</p>
+              <p class="card-projects">projects</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/project.png" alt="list" class="card-img" />
+            <div class="text-card">
+              <p class="card-title">40+</p>
+              <p class="card-projects">projects</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-block">
+        <div class="container">
+          <div class="description">
+            <p class="description-video-title">How do I work</p>
+            <p class="description-lorem">
+              Lorem Ipsum is fish text often used in print and web design. Lorem
+              Ipsum has been the standard "fish" for Latin texts since the early
+              16th century.
+            </p>
+          </div>
+
+          <iframe
+            width="1110px"
+            height="600px"
+            src="https://www.youtube.com/embed/SgmNxE9lWcY?si=rLI_MevGMeBc8Dv4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="video"></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="name">John Smith</p>
+        <p class="footer-description">(c) 2018. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

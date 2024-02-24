@@ -1,0 +1,193 @@
+@import "variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #eeeff1;
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 650px;
+      justify-content: space-between;
+      padding-top: 80px;
+      padding-bottom: 150px;
+
+      .nav-title {
+        font-size: 16px;
+        font-family: "Roboto-Regular";
+        line-height: 26px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #34547a;
+          cursor: pointer;
+        }
+      }
+
+      .homepage {
+        font-family: "Roboto-Medium";
+      }
+    }
+  }
+}
+
+.description {
+  .big-title {
+    font-family: "Roboto-Medium";
+    font-size: 48px;
+    padding-bottom: 60px;
+  }
+  .lorem {
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    font-family: "Roboto-Regular";
+    padding-bottom: 65px;
+  }
+  .button {
+    text-transform: uppercase;
+    background-color: #34547a;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto-Regular";
+    line-height: 26px;
+    padding: 20px 40px;
+
+    &:hover {
+      background-color: #fff;
+      color: #34547a;
+      transition: 0.2s;
+    }
+  }
+}
+
+.main {
+  .about {
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 100px;
+
+    .about-me-title {
+      font-family: "Roboto-Medium";
+      font-size: 32px;
+      line-height: 37.5px;
+      margin-bottom: 50px;
+    }
+    .about-lorem {
+      max-width: 540px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 26px;
+      color: #727272;
+    }
+  }
+  .projects {
+    background-color: #34547a;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      max-width: 1110px;
+
+      .card {
+        display: flex;
+        .card-img {
+          width: 50px;
+        }
+        .text-card {
+          color: white;
+          margin-left: 20px;
+
+          .card-title {
+            font-family: "Roboto-Medium";
+            font-size: 21px;
+            line-height: 24px;
+          }
+          .card-projects {
+            font-family: "Roboto-Regular";
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-block {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeff1;
+  .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .description {
+      text-align: center;
+      .description-video-title {
+        font-family: "Roboto-Medium";
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 50px;
+      }
+      .description-lorem {
+        max-width: 540px;
+        color: #727272;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0 auto;
+        margin-bottom: 55px;
+      }
+    }
+    .video {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.footer {
+  background-color: #34547a;
+  .container {
+    margin: 0 auto;
+    max-width: 1110px;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .name {
+      font-family: "Roboto-Medium";
+      margin-bottom: 20px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+
+    .footer-description {
+      font-family: "Roboto-Regular";
+      font-size: 13px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (max-width: $xl) {
+  .card {
+    flex: calc(33% - 10px);
+    padding-bottom: 10px;
+  }
+}
