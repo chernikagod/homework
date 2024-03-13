@@ -45,7 +45,7 @@ body {
 .menu .submenu .has-submenu:hover > .submenu {
   display: block;
   left: 100%;
-  top: 0;
+  top: 50px;
 }
 
 .menu .has-submenu:hover > a {
