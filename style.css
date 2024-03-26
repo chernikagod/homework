@@ -1,3 +1,7 @@
 .fade {
   display: none;
 }
+.card-text {
+  max-height: 6em;
+  overflow: hidden;
+}
