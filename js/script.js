@@ -57,7 +57,14 @@ function formatTime(timeInSth) {
   const hours = Math.floor(timeInSth / 3600);
   const minutes = Math.floor((timeInSth % 3600) / 60);
   const seconds = timeInSth % 60;
-  return `${hours.toString().padStart(2, "0")}:${minutes
-    .toString()
-    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  return `${formatNumber(hours)}:${formatNumber(minutes)}:${formatNumber(
+    seconds
+  )}`;
+}
+
+function formatNumber(number) {
+  if (number < 10) {
+    return "0" + number;
+  }
+  return number.toString();
 }
