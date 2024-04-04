@@ -23,13 +23,11 @@ function showUserInfo(userName) {
   mainForm.style.display = "none";
 }
 
-// Функція, яка показує форму та приховує блок з привітанням
 function showLoginForm() {
   userInfo.style.display = "none";
   mainForm.style.display = "block";
 }
 
-// Обробник події для форми
 function formHandler(event) {
   event.preventDefault();
   const name = document.getElementById("nameField").value;
@@ -38,7 +36,6 @@ function formHandler(event) {
   checkAuthorization();
 }
 
-// Обробник події для кнопки виходу
 function logoutHandler(event) {
   event.preventDefault();
   localStorage.removeItem("userName");
@@ -46,25 +43,20 @@ function logoutHandler(event) {
   checkAuthorization();
 }
 
-// Збереження у локальне сховище
 function saveToStorage(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-// Отримання з локального сховища
 function getFromStorage(key) {
   const item = localStorage.getItem(key);
   return item ? JSON.parse(item) : null;
 }
 
-// Додавання обробників подій
 mainForm.addEventListener("submit", formHandler);
 logoutButton.addEventListener("click", logoutHandler);
 
-// Перевірка авторизації при завантаженні сторінки
 checkAuthorization();
 
-// Варіант 1: Запустити toggleSections після кожної операції логін/логаут
 function toggleSections(hasUser = false) {
   if (hasUser) {
     showUserInfo(getFromStorage("userName"));
@@ -73,7 +65,6 @@ function toggleSections(hasUser = false) {
   }
 }
 
-// Варіант 2: Примусово перезавантажити сторінку та знов показати необхідний блок
 function reloadPage() {
   location.reload();
 }
