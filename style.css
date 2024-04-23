@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.main-title,
+.question {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -28,14 +35,13 @@
   gap: 0px 0px;
   grid-template-areas:
     "left-section-header right-section-header right-section-header"
-    "left-section-header right-section-header2 right-section-header2"
-    ". . .";
+    "left-section-header right-section-header2 right-section-header2";
 }
 
 .left-part {
   grid-area: left-section-header;
 }
-.right-one {
+.right-header-part {
   grid-area: right-section-header;
 }
 .right-functions {
@@ -51,7 +57,7 @@
   display: block;
 }
 
-.right-one,
+.right-header-part,
 .right-functions {
   display: flex;
   justify-content: flex-end;
@@ -125,7 +131,7 @@
   text-underline-offset: 5px;
 }
 
-.pr {
+.opt {
   padding-right: 15px;
 }
 
@@ -231,7 +237,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "left-part-body right-part-body";
+  grid-template-areas: "left-part-body right-part-textarea";
   align-content: space-between;
   gap: 60px;
 }
@@ -241,8 +247,8 @@
   max-width: 510px;
 }
 
-.right-part-body {
-  grid-area: right-part-body;
+.right-part-textarea {
+  grid-area: right-part-textarea;
   margin-left: 10px;
 }
 
@@ -302,20 +308,20 @@
   color: #f0145a;
 }
 
-.facebook-blue-body:hover svg path {
+.facebook-blue-body-class:hover svg path {
   fill: #f0145a;
 }
 
-.facebook-blue-body {
+.facebook-blue-body-class {
   text-decoration: none;
 }
 
-.facebook-blue-body {
+.facebook-blue-body-class {
   display: flex;
   align-items: center;
 }
 
-.right-part-body {
+.right-part-textarea {
   max-width: 510px;
   background-color: #f5f5fa;
   border-radius: 12px;
@@ -546,7 +552,7 @@ footer .container {
     max-width: 650px;
   }
 
-  .right-part-body {
+  .right-part-textarea {
     max-width: 650px;
   }
 
@@ -589,7 +595,7 @@ footer .container {
     max-width: 422px;
   }
 
-  .right-part-body {
+  .right-part-textarea {
     max-width: 422px;
   }
 
@@ -645,7 +651,7 @@ footer .container {
     margin-bottom: 14px;
   }
 
-  .right-one {
+  .right-header-part {
     justify-self: start;
     grid-area: right-section-header;
   }
@@ -670,7 +676,7 @@ footer .container {
     margin: 0 auto;
   }
 
-  .right-part-body {
+  .right-part-textarea {
     max-width: 648px;
     margin: 0 auto;
     margin-top: 60px;
@@ -743,7 +749,7 @@ footer .container {
       "left-section-header right-section-header2";
   }
 
-  .right-one {
+  .right-header-part {
     display: flex;
     order: -1;
     background-color: #f5f5fa;
@@ -821,7 +827,7 @@ footer .container {
     margin: 0 auto;
   }
 
-  .right-part-body {
+  .right-part-textarea {
     max-width: 315px;
     margin: 0 auto;
     margin-top: 30px;
