@@ -38,7 +38,3 @@ function showContent(tabNumber) {
   $(`.tab:nth-child(${tabNumber})`).addClass("active-tab");
   $(`.content:nth-child(${tabNumber})`).show();
 }
-
-function scrollToServices() {
-  $("#services").get(0).scrollIntoView({ behavior: "smooth" });
-}
