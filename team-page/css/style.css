@@ -1,0 +1,654 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left-part {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: #f0145a !important;
+  border-radius: 8px;
+  color: white !important;
+}
+
+.active-menu {
+  color: #f0145a;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+/* //// HEADER //// */
+
+.header {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "left-part right-one right-one"
+    "left-part right-two right-two"
+    ". . .";
+}
+
+.left-part {
+  grid-area: left-part;
+}
+.right-one {
+  grid-area: right-one;
+}
+.right-two {
+  grid-area: right-two;
+  padding-top: 11px;
+}
+
+.hidden {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.right-one,
+.right-two {
+  display: flex;
+  justify-content: flex-end;
+  height: 25px;
+}
+
+.facebook:hover svg path {
+  fill: #f0145a;
+}
+
+.languages {
+  display: flex;
+}
+
+.languages p {
+  font-family: "Montserrat-Bold";
+  font-size: 12px;
+  padding: 5px 7px;
+  color: #b3b3ba;
+  line-height: 14.63px;
+  cursor: pointer;
+}
+
+.right-two img {
+  display: none;
+}
+
+.languages p:hover {
+  background-color: #f5f5fa;
+  border-radius: 8px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #e6e6f0;
+  border-radius: 50%;
+  margin: 9.5px 6px;
+}
+
+.address {
+  padding: 2.5px 0;
+  color: #b3b3ba;
+  line-height: 19.5px;
+  font-family: "Montserrat-Regular";
+}
+
+.number {
+  color: #b3b3ba;
+  line-height: 19.5px;
+  font-family: "Montserrat-Bold";
+  padding: 2.5px 0;
+}
+
+.number a {
+  text-decoration: none;
+  color: #b3b3ba;
+}
+
+.menu {
+  display: flex;
+  color: #24a3ff;
+  font-family: "Montserrat-Bold";
+  line-height: 19.5px;
+  cursor: pointer;
+}
+
+.menu p:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.pr {
+  padding-right: 15px;
+}
+
+/* //// MAIN //// */
+
+.container-decoration {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.text-decoration {
+  margin: 60px 0;
+  font-size: 38px;
+  line-height: 46.32px;
+  font-family: "Montserrat-Bold";
+  background: linear-gradient(to right, #f0145a 0%, #ef8080 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ///////////////// */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 400px;
+  margin-bottom: 60px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card:hover .name,
+.card:hover .position {
+  color: #f0145a;
+}
+
+.card .team {
+  max-width: 100%;
+  height: 400px;
+  border-radius: 12px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.name {
+  color: #323264;
+  line-height: 19.5px;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 5px;
+}
+
+.position {
+  color: #b3b3ba;
+  line-height: 22px;
+  font-size: 14px;
+  font-family: "Montserrat-Regular";
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+/* //// FOOTER //// */
+
+footer {
+  background-color: #f5f5fa;
+  width: 100%;
+}
+
+footer .container {
+  padding: 30px 0;
+}
+
+.facebook-blue:hover svg path {
+  fill: #f0145a;
+}
+
+.first-line {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address2 {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.contact {
+  display: flex;
+  cursor: pointer;
+}
+
+.address2 p {
+  color: #323264;
+  font-family: "Montserrat-Regular";
+}
+
+.address2 a {
+  color: #24a3ff;
+  margin: 2.5px 0;
+  font-size: 12px;
+  line-height: 14.63px;
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.dot2 {
+  width: 6px;
+  height: 6px;
+  background-color: #b3b3ba;
+  border-radius: 50%;
+  margin: 7px 10px;
+}
+
+/* ///////////////// */
+
+.second-line {
+  display: flex;
+}
+
+.copyright {
+  color: #b3b3ba;
+  line-height: 19.5px;
+  font-family: "Montserrat-Regular";
+  padding-bottom: 0;
+}
+
+.number2 {
+  padding: 9px 0;
+  color: #46466e;
+  line-height: 19.5px;
+  font-family: "Montserrat-Bold";
+  cursor: pointer;
+}
+
+.number2 a {
+  text-decoration: none;
+  color: #46466e;
+}
+
+.email {
+  padding: 9px 0;
+  color: #24a3ff;
+  line-height: 19.5px;
+  font-family: "Montserrat-Bold";
+  cursor: pointer;
+}
+
+.email:hover a {
+  color: #f0145a;
+}
+
+.email a {
+  text-decoration: none;
+  color: #24a3ff;
+}
+
+.dot3 {
+  width: 6px;
+  height: 6px;
+  background-color: #b3b3ba;
+  border-radius: 50%;
+  margin: 16px 10px;
+}
+
+/* //// MEDIA //// */
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* //// HEADER //// */
+
+  /* //// MAIN //// */
+  .container-decoration {
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+
+  .card {
+    min-width: 493.33px;
+  }
+
+  .card .team {
+    width: 493.33px;
+    object-fit: cover;
+  }
+
+  /* //// FOOTER //// */
+}
+
+@media screen and (max-width: 1330px) {
+  .container {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
+  /* //// HEADER //// */
+
+  /* //// MAIN //// */
+  .container-decoration {
+    max-width: 664px;
+    margin: 0 auto;
+  }
+
+  .card {
+    max-width: 261.33px;
+  }
+  .card .team {
+    object-fit: cover;
+  }
+
+  /* //// FOOTER //// */
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+
+  /* //// HEADER //// */
+
+  .left-part img {
+    max-width: 254px;
+    height: 60px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "right-one"
+      "left-part"
+      "right-two";
+  }
+
+  .left-part {
+    margin-top: 30px;
+    grid-area: left-part;
+    margin-bottom: 14px;
+  }
+
+  .right-one {
+    justify-self: start;
+    grid-area: right-one;
+  }
+
+  .right-two {
+    justify-self: start;
+    grid-area: right-two;
+  }
+
+  /* //// MAIN //// */
+  .container-decoration {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+
+  .card {
+    max-width: 294px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-info {
+    width: 294px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card .team {
+    object-fit: cover;
+  }
+
+  .cards-first-line,
+  .cards-second-line {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* //// FOOTER //// */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .contact {
+    margin-bottom: 30px;
+  }
+
+  footer .second-line {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    max-width: 345px;
+    margin: 0 auto;
+  }
+
+  /* //// HEADER //// */
+
+  header .container {
+    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "right-one right-one"
+      "left-part right-two";
+  }
+
+  .right-one {
+    display: flex;
+    order: -1;
+    background-color: #f5f5fa;
+    height: 45px;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-part {
+    margin: 0;
+    padding-top: 15px;
+    grid-area: left-part;
+  }
+
+  .right-two {
+    grid-area: right-two;
+  }
+
+  .facebook-logo {
+    display: none;
+  }
+
+  .right-two {
+    width: 100%;
+  }
+
+  .left-part img {
+    width: 141.95px;
+    height: 35px;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .right-two img {
+    display: flex;
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .languages p {
+    margin-block-end: 0em;
+  }
+
+  /* //// MAIN //// */
+  .container-decoration {
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .text-decoration {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container .card {
+    max-width: 315px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .card {
+    max-width: 315px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+  }
+  .card .team {
+    object-fit: cover;
+    height: 300px;
+    width: 315px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .card-info {
+    margin: 0 auto;
+    width: 315px;
+  }
+
+  /* //// FOOTER //// */
+
+  .dot3 {
+    display: none;
+  }
+
+  .dot2 {
+    display: none;
+  }
+
+  .address2 {
+    display: block;
+    text-align: center;
+  }
+  .address2 p {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer .second-line {
+    margin: 0 auto;
+  }
+
+  .number2 {
+    padding: 0;
+  }
+  .email {
+    padding-bottom: 0;
+  }
+  .facebook {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+header a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+header a:-webkit-any-link {
+  color: #24a3ff;
+  text-decoration: none;
+}
+
+header a.active-menu {
+  color: #f0145a;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+header a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+header .number a {
+  text-decoration: none;
+  color: #b3b3ba;
+}
